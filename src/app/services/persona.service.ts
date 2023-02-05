@@ -1,8 +1,6 @@
-
 import { HttpClient } from '@angular/common/http';
 import { Injectable } from '@angular/core';
 import { Observable } from 'rxjs';
-import { environment } from 'src/environments/environment';
 import { persona } from '../model/persona.model';
 
 @Injectable({
@@ -10,27 +8,11 @@ import { persona } from '../model/persona.model';
 })
 
 export class PersonaService {
-  authURL = 'https://backendmariamonchot.onrender.com/personas/'
+  URL = 'https://backendmariamonchot.onrender.com/personas/';
 
-  constructor(private httpClient: HttpClient) { }
+  constructor(private http: HttpClient) { }
 
-  public lista(): Observable<persona[]>{
-    return this.httpClient.get<persona[]>(this.authURL + 'lista');
+  public getPersona(): Observable<persona>{
+    return this.http.get<persona>(this.URL+ 'traer/perfil');
   }
-
-  public detail(id: number): Observable<persona>{
-    return this.httpClient.get<persona>(this.authURL + `detail/${id}`);
-  }
-
-  // public save(educacion: Educacion): Observable<any>{
-  //   return this.httpClient.post<any>(this.URL + 'create', educacion);
-  // }
-
-  public update(id: number, Persona: persona): Observable<any>{
-    return this.httpClient.put<any>(this.authURL + `update/${id}`, persona);
-  }
-
-  // public delete(id: number): Observable<any>{
-  //   return this.httpClient.delete<any>(this.URL + `delete/${id}`);
-  // }
 }

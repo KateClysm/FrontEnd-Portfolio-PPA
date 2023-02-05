@@ -11,7 +11,7 @@ import { NuevoUsuario } from '../model/nuevo-usuario';
 })
 export class AuthService {
 
-  authURL = 'https://backendmariamonchot.onrender.com/auth/'
+  authURL = 'https://backendmariamonchot.onrender.com/auth/';
 
   constructor(private httpClient: HttpClient) { }
 

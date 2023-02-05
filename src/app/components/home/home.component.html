@@ -1,14 +1,14 @@
 <div class="container-home">
     <div class="container-fluid d-flex align-items-center  justify-content-center home">
         <div class="container text-center">
-            <img src={{persona.img}} alt="" class="img-fluid" id="fotodeperfil">
+            <!-- <img src={{persona.img}} alt="" class="img-fluid" id="fotodeperfil"> -->
             <h1 class="pb-1 ts-dark display-1 text-uppercase" id="nombre">{{persona.nombre}} {{persona.apellido}}</h1>
-            <div class="">
+            <!-- <div class="">
                 <h2 class="text-white fs-3">{{persona.descripcion}}</h2>
-            </div>
+            </div> -->
 
             <!-- Botones Editar y Borrar -->
-            <div class="d-flex justify-content-center align-items-center" *ngIf="isLogged">
+            <div class="d-flex justify-content-center align-items-center" > <!-- adentro *ngIf="isLogged"-->
                 <div class="p-1">
                     <button class="btn-medium px-2 py-1 sm-text" routerLink="/editAcercaDe/1" >
                         <i class="fa-regular fa-pen-to-square p-1"></i>Editar Perfil
