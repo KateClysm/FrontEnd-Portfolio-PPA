@@ -1,24 +1,14 @@
 /*Hover de los íconos Github y StackOverflow*/
-.nav-link i:hover{
-    color: var(--dark);
+.nav-link i:hover, .credits:hover, .nav-item:hover{
+    color: var(--light);
     transition: ease-in 0.3s; }
 
 /*Height*/
 .footer{
-    height: 9vh;
-}
+    height: 9vh;}
 
-.credits:hover{
-    color: var(--dark);
-    transition: ease-in 0.3s; }
+ul{list-style: none;}
 
-.nav-item:hover{
-    color: var(--dark);
-    transition: ease-in 0.3s; }
-
-.sm-text{
-    font-size: 0.7rem;
-}
-ul{
-    list-style: none;
+.footer-text{
+    font-size: 0.9rem;
 }

@@ -1,25 +1,22 @@
-/*TO ALL*/
 *{  padding: 0;
     margin: 0;
     box-sizing: border-box;
     font-family: 'Montserrat', sans-serif;}
 
-/*CLASES REUTILIZADAS*/
 :root{
     --dark: #1d1719;
     --medium: #896454;
     --light:#c3a08f;
-    --dust: #a99b94a7;
+    --dust: #a99b9470;
     --deepblue: #167e8c5f;
     --storm: #3e3037;}
 
-
 /*Clases utilizadas en más de un componente*/
-
 /*imágenes en sobre mí y experiencia*/
 .img-section{
     width: 280px;}
-/*botón color medium usado en inicio, contacto y login*/
+
+/*botón usado en inicio, contacto y login*/
 .btn-medium{
     background-color: var(--medium);
     color: #fff;
@@ -39,3 +36,21 @@
 .sm-text{
     font-size: small;}
 
+/*Edición de información*/
+.editSection{
+    height: 90vh;
+    background: linear-gradient(var(--storm), var(--dark));}
+
+.bgDark{
+    background: linear-gradient(var(--storm), var(--dark));
+}
+/*Formularios*/
+.form-control{
+    outline: none;}
+
+/*Centrado Absoluto*/
+.abs-center {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}

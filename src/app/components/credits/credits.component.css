@@ -1,12 +1,6 @@
-.credits-container{
-    background-image: url(src\assets\images\pexels-kate-trifo-4057059.jpg);
-    background-repeat: no-repeat;
-    background-size: cover;
-    height: 100vh;
-}
-.credits-section{
-    height: 80vh;
-}
+/* .credits-section{
+    height: 81vh;
+} */
 .credit-link{
     color: var(--dark);
 }

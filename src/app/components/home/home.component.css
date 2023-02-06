@@ -15,9 +15,7 @@
 /*Créditos*/
 .credits{
     height: 5vh;}
-.credits:hover{
-    color: var(--dark);
-    transition: ease-in 0.3s; }
-.nav-item:hover{
-    color: var(--dark);
+
+.credits:hover, .nav-item:hover{
+    color: var(--light);
     transition: ease-in 0.3s; }

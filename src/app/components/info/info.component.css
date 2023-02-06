@@ -13,10 +13,3 @@
 /*Hover íconos Tecnologías y Texto*/
 .tecnologias:hover{
     color: #167e8c;}
-
-/*Imagen de fondo que abarca al nav y a la sección*/
-.container-sobremi{
-    background: linear-gradient(var(--dark), var(--medium), var(light));
-    background-image: url(src\assets\images\image.png);
-    background-size: cover;
-    background-repeat: no-repeat;}

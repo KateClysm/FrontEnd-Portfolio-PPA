@@ -53,3 +53,37 @@
 [info] i  hosting: 127.0.0.1 - - [05/Feb/2023:15:40:44 +0000] "GET /assets/images/application.png HTTP/1.1" 200 64532 "http://localhost:5000/Experiencia-Y-Proyectos" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/109.0.0.0 Safari/537.36" {"metadata":{"emulator":{"name":"hosting"},"message":"127.0.0.1 - - [05/Feb/2023:15:40:44 +0000] \"GET /assets/images/application.png HTTP/1.1\" 200 64532 \"http://localhost:5000/Experiencia-Y-Proyectos\" \"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/109.0.0.0 Safari/537.36\""}}
 [info] i  hosting: 127.0.0.1 - - [05/Feb/2023:15:40:44 +0000] "GET /assets/images/cozydesk.jpg HTTP/1.1" 200 1572384 "http://localhost:5000/Experiencia-Y-Proyectos" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/109.0.0.0 Safari/537.36" {"metadata":{"emulator":{"name":"hosting"},"message":"127.0.0.1 - - [05/Feb/2023:15:40:44 +0000] \"GET /assets/images/cozydesk.jpg HTTP/1.1\" 200 1572384 \"http://localhost:5000/Experiencia-Y-Proyectos\" \"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/109.0.0.0 Safari/537.36\""}}
 [info] i  hosting: 127.0.0.1 - - [05/Feb/2023:15:40:47 +0000] "GET /pexels-kate-trifo-4057059.802ad63c376dafa3.jpg HTTP/1.1" 200 2060387 "http://localhost:5000/Contacto" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/109.0.0.0 Safari/537.36" {"metadata":{"emulator":{"name":"hosting"},"message":"127.0.0.1 - - [05/Feb/2023:15:40:47 +0000] \"GET /pexels-kate-trifo-4057059.802ad63c376dafa3.jpg HTTP/1.1\" 200 2060387 \"http://localhost:5000/Contacto\" \"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/109.0.0.0 Safari/537.36\""}}
+[debug] [2023-02-05T15:55:15.953Z] ----------------------------------------------------------------------
+[debug] [2023-02-05T15:55:15.958Z] Command:       C:\Program Files\nodejs\node.exe C:\Users\Katerina\AppData\Roaming\npm\node_modules\firebase-tools\lib\bin\firebase.js serve
+[debug] [2023-02-05T15:55:15.961Z] CLI Version:   11.20.0
+[debug] [2023-02-05T15:55:15.961Z] Platform:      win32
+[debug] [2023-02-05T15:55:15.962Z] Node Version:  v16.18.0
+[debug] [2023-02-05T15:55:15.964Z] Time:          Sun Feb 05 2023 12:55:15 GMT-0300 (hora estándar de Argentina)
+[debug] [2023-02-05T15:55:15.965Z] ----------------------------------------------------------------------
+[debug] 
+[debug] [2023-02-05T15:55:16.271Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform"]
+[debug] [2023-02-05T15:55:16.272Z] > authorizing via signed-in user (kate.clysm@gmail.com)
+[debug] [2023-02-05T15:55:16.273Z] [iam] checking project portfoliomariamonchot for permissions ["firebase.projects.get"]
+[debug] [2023-02-05T15:55:16.282Z] >>> [apiv2][query] POST https://cloudresourcemanager.googleapis.com/v1/projects/portfoliomariamonchot:testIamPermissions [none]
+[debug] [2023-02-05T15:55:16.284Z] >>> [apiv2][(partial)header] POST https://cloudresourcemanager.googleapis.com/v1/projects/portfoliomariamonchot:testIamPermissions x-goog-quota-user=projects/portfoliomariamonchot
+[debug] [2023-02-05T15:55:16.284Z] >>> [apiv2][body] POST https://cloudresourcemanager.googleapis.com/v1/projects/portfoliomariamonchot:testIamPermissions {"permissions":["firebase.projects.get"]}
+[debug] [2023-02-05T15:55:17.345Z] <<< [apiv2][status] POST https://cloudresourcemanager.googleapis.com/v1/projects/portfoliomariamonchot:testIamPermissions 200
+[debug] [2023-02-05T15:55:17.346Z] <<< [apiv2][body] POST https://cloudresourcemanager.googleapis.com/v1/projects/portfoliomariamonchot:testIamPermissions {"permissions":["firebase.projects.get"]}
+[debug] [2023-02-05T15:55:17.349Z] >>> [apiv2][query] GET https://firebase.googleapis.com/v1beta1/projects/portfoliomariamonchot [none]
+[debug] [2023-02-05T15:55:17.769Z] <<< [apiv2][status] GET https://firebase.googleapis.com/v1beta1/projects/portfoliomariamonchot 200
+[debug] [2023-02-05T15:55:17.771Z] <<< [apiv2][body] GET https://firebase.googleapis.com/v1beta1/projects/portfoliomariamonchot {"projectId":"portfoliomariamonchot","projectNumber":"825407860361","displayName":"mariamonchotfrontend","name":"projects/portfoliomariamonchot","resources":{"hostingSite":"portfoliomariamonchot"},"state":"ACTIVE","etag":"1_5aba479a-24ee-4f1d-9958-c78c394c174d"}
+[info] 
+[info] === Serving from 'C:\Users\Katerina\Desktop\Proyecto Portfolio PPA\FrontEnd-Portfolio-PPA'...
+[info] 
+[debug] [2023-02-05T15:55:17.794Z] >>> [apiv2][query] GET https://firebasehosting.googleapis.com/v1beta1/projects/portfoliomariamonchot/sites 
+[debug] [2023-02-05T15:55:18.959Z] <<< [apiv2][status] GET https://firebasehosting.googleapis.com/v1beta1/projects/portfoliomariamonchot/sites 200
+[debug] [2023-02-05T15:55:18.960Z] <<< [apiv2][body] GET https://firebasehosting.googleapis.com/v1beta1/projects/portfoliomariamonchot/sites {"sites":[{"name":"projects/portfoliomariamonchot/sites/portfoliomariamonchot","defaultUrl":"https://portfoliomariamonchot.web.app","type":"DEFAULT_SITE"}]}
+[debug] [2023-02-05T15:55:18.962Z] >>> [apiv2][query] GET https://firebase.googleapis.com/v1beta1/projects/portfoliomariamonchot/webApps/-/config [none]
+[debug] [2023-02-05T15:55:19.612Z] <<< [apiv2][status] GET https://firebase.googleapis.com/v1beta1/projects/portfoliomariamonchot/webApps/-/config 200
+[debug] [2023-02-05T15:55:19.613Z] <<< [apiv2][body] GET https://firebase.googleapis.com/v1beta1/projects/portfoliomariamonchot/webApps/-/config {"projectId":"portfoliomariamonchot","storageBucket":"portfoliomariamonchot.appspot.com","apiKey":"AIzaSyCTKevajxw1KXTUmgrZyE5XWeCb9ziG3e4","authDomain":"portfoliomariamonchot.firebaseapp.com","messagingSenderId":"825407860361"}
+[debug] [2023-02-05T15:55:19.681Z] >>> [apiv2][query] GET https://firebase.googleapis.com/v1beta1/projects/portfoliomariamonchot [none]
+[debug] [2023-02-05T15:55:20.072Z] <<< [apiv2][status] GET https://firebase.googleapis.com/v1beta1/projects/portfoliomariamonchot 200
+[debug] [2023-02-05T15:55:20.073Z] <<< [apiv2][body] GET https://firebase.googleapis.com/v1beta1/projects/portfoliomariamonchot {"projectId":"portfoliomariamonchot","projectNumber":"825407860361","displayName":"mariamonchotfrontend","name":"projects/portfoliomariamonchot","resources":{"hostingSite":"portfoliomariamonchot"},"state":"ACTIVE","etag":"1_5aba479a-24ee-4f1d-9958-c78c394c174d"}
+[info] i  hosting[portfoliomariamonchot]: Serving hosting files from: dist/portfolio-angular {"metadata":{"emulator":{"name":"hosting"},"message":"Serving hosting files from: \u001b[1mdist/portfolio-angular\u001b[22m"}}
+[info] +  hosting[portfoliomariamonchot]: Local server: http://localhost:5000 {"metadata":{"emulator":{"name":"hosting"},"message":"Local server: \u001b[4m\u001b[1mhttp://localhost:5000\u001b[22m\u001b[24m"}}
+[info] i  hosting: 127.0.0.1 - - [05/Feb/2023:15:56:31 +0000] "GET /Inicio HTTP/1.1" 200 - "-" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/109.0.0.0 Safari/537.36" {"metadata":{"emulator":{"name":"hosting"},"message":"127.0.0.1 - - [05/Feb/2023:15:56:31 +0000] \"GET /Inicio HTTP/1.1\" 200 - \"-\" \"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/109.0.0.0 Safari/537.36\""}}
