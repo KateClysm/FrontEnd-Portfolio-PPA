@@ -3,6 +3,8 @@
     box-sizing: border-box;
     font-family: 'Montserrat', sans-serif;}
 
+
+/*Paleta de colores*/
 :root{
     --dark: #1d1719;
     --medium: #896454;
@@ -11,10 +13,8 @@
     --deepblue: #167e8c5f;
     --storm: #3e3037;}
 
-/*Clases utilizadas en más de un componente*/
 /*imágenes en sobre mí y experiencia*/
-.img-section{
-    width: 280px;}
+.img-section{width: 280px;}
 
 /*botón usado en inicio, contacto y login*/
 .btn-medium{
@@ -28,29 +28,33 @@
     background-color: var(--light);
     transition: ease-in 0.3s;} 
 
-/*Text Shadow para los títulos*/
-.text-shadow{
-    text-shadow: 0px 2px 2px var(--dark);}
 
-/*Texto Pequeño*/
-.sm-text{
-    font-size: small;}
+/*Text Shadow*/
+.text-shadow{text-shadow: 0px 2px 2px var(--dark);}
 
-/*Edición de información*/
+/*Secciones de edición*/
 .editSection{
     height: 90vh;
-    background: linear-gradient(var(--storm), var(--dark));}
+    background: linear-gradient(var(--dark), var(--dark), var(--storm));}
 
-.bgDark{
-    background: linear-gradient(var(--storm), var(--dark));
-}
+/*Fondo general*/
+body{background: linear-gradient(var(--dark), var(--dark), var(--storm));
+    height: 100%;
+    background-attachment: fixed;}
+
 /*Formularios*/
-.form-control{
-    outline: none;}
+.form-control{outline: none;}
 
 /*Centrado Absoluto*/
 .abs-center {
     display: flex;
     align-items: center;
-    justify-content: center;
-}
+    justify-content: center;}
+
+/*Responsive font size*/
+.titulo{font-size: calc(1.1em + 1vw);}
+.subtitulo{font-size: calc(1em + 0.3vw);}
+
+.apartado{font-size: calc(0.9em + 0.7vw);}
+.gtexto{font-size: calc(0.5em + 0.7vw);}
+.texto{font-size: calc(0.3em + 0.7vw);}

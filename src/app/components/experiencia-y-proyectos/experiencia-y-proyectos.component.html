@@ -1,68 +1,65 @@
-<!--Contenedor de toda la sección Experiencia y Proyectos-->
-<div class="container-fluid d-flex row px-0 mx-0 pt-5 justify-content-center bgDark">
+<div class="container-fluid abs-center row p-0 m-0 pt-5">
 
-    <!--Una Row con la foto y título-->
-    <div class="row align-items-center justify-content-center p-0 pt-5">
-       <!--Foto-->
-       <div class="col-5 m-auto col-sm-4">
+    <!--Foto y Título-->
+    <div class="row abs-center p-0 px-2 px-md-4">
+
+       <div class="col-5 m-auto col-sm-4 col-lg-2">
            <img src=".\assets\images\application.png" class="img-section d-block mx-auto my-auto img-fluid mx-0 p-0 " alt="Persona tomando un café">
        </div>
-       <!--Título-->
+
        <div class="col text-white p-0 pe-2 pe-md-5">
-           <h2 class="fs-3 text-shadow">Experiencia y Proyectos
-               <a href="#">
-                   <i class="fa-solid fa-pen text-white fs-6"></i>
-               </a>
-           </h2>
+           <h2 class="titulo text-shadow">Experiencia y Proyectos</h2>
        </div>
    </div>
    
-   <!--Una Row diferente para las Secciones-->
-   <div class="row d-flex justify-content-sm-end justify-content-center py-3 px-0">
-       <!--Dos columnas, una pertenece a una línea decorativa que aparece a partir del breakpoint sm y la otra pertenece a las secciones-->
+   <!--Row para las Secciones-->
+   <div class="row d-flex justify-content-sm-end justify-content-center py-3 px-0 px-2 px-md-4 m-0">
+
        <!--Línea Decorativa-->
-       <div class="col-2 p-0 vr px-md-1 d-sm-flex justify-content-end d-none"></div>
+       <div class="vr col-2 col-lg-1 d-none justify-content-lg-start p-0  px-md-1 d-sm-flex justify-content-end "></div>
+
         <!--Secciones-->
-        <div class="col col-sm-10 text-white justify-content-center mt-3 mt-lg-5 pb-5">
+        <div class="col col-sm-10 col-lg-11 text-white justify-content-center pt-3 pt-lg-5 pb-5 m-0">
 
-            <!--Row de Experiencia laboral-->
-            <app-experiencia></app-experiencia>
-
-            <!--Row de Proyectos-->
-            <div class="row mx-0 px-lg-5 pb-3">
-                <!--Título-->
-                <h2 class="fs-4 px-1 pb-3 border-bottom text-shadow">Proyectos</h2>
-                <div class="m-0 p-0">
-                    <button class="btn-medium px-3 py-2" type="button" routerLink="/nuevaexp" *ngIf="">
-                        Agregar Proyecto
-                    </button>
-                </div>
-                <!--Contenedor de las card de Experiencia-->
-                <div class="row px-0 mx-0 justify-content-center pt-3 gap-2 justify-content-sm-start">
-                    <!--Columnas de Cards de Trabajo con For-->
-                    <div class="col-12 col-md-4 text-center text-sm-start card-proyecto p-1">
-                        <div class="card-image">
-                            <img src=".\assets\images\cozydesk.jpg" class="card-img-top" width="100%" height="200" >
-                        </div>
-
-                        <div class="card-body p-0 text-white">
-                            <h5 class="pt-2">PROYECTO NOMBRE</h5>
-                            <p class="card-text sm-text">Descripción corta del proyecto Descripción corta del proyecto Descripción corta del proyecto</p>
-                            <p class="card-text sm-text">00/00/0000</p>
-                            <div class="d-flex justify-content-between align-items-center">
-                                <div class="btn-group gap-1">
-                                    <button type="button" class="btn btn-dark fs-6 py-2">Ver Proyecto</button>
-                                    <button type="button" class="btn btn-dark fs-6 py-2 "> Ver Github
-                                        <i class="fa-brands fa-github"></i>
-                                    </button>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>  
-            </div>
+            <!-- <app-experiencia></app-experiencia> --> 
             
-        </div> 
+            <!--Row Proyectos-->
+            <div class="row mx-0 px-lg-2 pb-5">
+
+                <h2 class="pb-2 border-bottom apartado">Proyectos</h2>
+            
+                <div class="row px-0 mx-0 justify-content-center pt-3  justify-content-sm-start gap-2 gap-lg-3">
+            
+                    <div class="col-auto  col-sm-5 col-md-4 col-lg-3 text-center  card-proyecto p-1 texto">
+                        <div class="card-image">
+                            <img src=".\assets\images\cozydesk.jpg" class="card-img-top" width="100%" height="50%" >
+                        </div>
+    
+                        <div class="card-body p-0 text-white">
+                            <h5 class="pt-2 subtitulo">Nombre del Proyecto</h5>
+                            <p class="card-text mb-0 pb-2">Descripción corta del proyecto</p>
+                            <p class="card-text pb-2">00/00/0000</p>
+                        </div>
+
+
+                        <div class="abs-center">
+                            <button class="btn-medium  p-1">
+                                Ver Proyecto
+                            </button>
+                            <button class="btn-medium p-1 " >
+                                <i class="fa-brands fa-github p-1"></i>Ver Código
+                            </button>
+                        </div>
+                    </div> 
+             
+
+                    
+
+                </div> 
+            </div>
+        </div>
+
     </div>
+
     <app-footer></app-footer>
 </div>

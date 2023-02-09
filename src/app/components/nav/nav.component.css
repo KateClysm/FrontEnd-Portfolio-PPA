@@ -4,7 +4,16 @@
 
 /*Fondo de la barra de navegación extendida y Altura*/
 .navbar{height: 10vh;
-    background-color: var(--storm);}
+    /* background-color: var(--storm); */
+    background-color: #1d1719c4;
+}
+
+.offcanvas{
+    width: 80vw;
+}
+.btn-close{
+    color:#fff;
+}
 
 /*Items*/
 .nav-item .login, .nav-item a, .brand {

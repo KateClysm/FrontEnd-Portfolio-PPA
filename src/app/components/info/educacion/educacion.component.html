@@ -1,31 +1,31 @@
-<div class="row mx-0 px-lg-5 pb-5">
-    <!--Título-->
-    <h2 class="fs-4 pb-2 border-bottom">Educación</h2>
-    <div class="m-0 p-0">
-        <button class="btn-medium px-3 py-2" type="button" routerLink="/nuevaedu" *ngIf="isLogged">
-            Agregar Educación
-        </button>
-    </div>
+<div class="row mx-0 px-lg-2 pb-5">
+
+    <h2 class="pb-2 border-bottom apartado">Educación</h2>
+
     <!--Contenedor de las Card de Educación-->
-    <div class="row px-0 mx-0 justify-content-center pt-3 gap-2 justify-content-sm-start">
+    <div class="row px-0 mx-0 justify-content-center pt-3  justify-content-sm-start gap-2">
+
         <!--Card iterada con For-->
-        <div class="col-12 col-md-4 text-center text-sm-start px-3 card-educacion py-2 py-lg-3" *ngFor="let Educacion of educacion">
-            <!--Botones Editar y Borrar-->
-            <div class="d-flex align-content-end align-items-end" *ngIf="isLogged">
-                <div class="p-1">
-                    <button class="btn-medium px-2 py-1 sm-text" routerLink="/editedu/{{Educacion.id}}" >
-                        <i class="fa-regular fa-pen-to-square p-1"></i>Editar
-                    </button>
-                </div>
-               <div class="p-1">
-                    <button class="btn-medium px-2 py-1 sm-text" (click)="delete(Educacion.id)">
-                        <i class="fa-regular fa-trash-can p-1"></i>Borrar
-                    </button>
-               </div>
-            </div>
-            <h5 class="pt-2">{{Educacion.nombreE}}</h5>
-            <p class="card-text sm-text">{{Educacion.descripcionE}}</p>
+        <div class="col-5 col-sm-5 col-md-auto text-center card-educacion p-3" *ngFor="let Educacion of educacion">
             
+            <h5 class="gtexto m-0">{{Educacion.nombreE}}</h5>
+            
+            <p class="card-text texto text-center pt-3 pb-0 align-self-end">{{Educacion.descripcionE}}</p>
+            
+            <!--Botones Editar y Borrar-->
+            <div class="abs-center" *ngIf="isLogged">
+                <button class="btn-medium  p-1 texto" routerLink="/editedu/{{Educacion.id}}" >
+                    <i class="fa-regular fa-pen-to-square p-1"></i>Editar
+                </button>
+                <button class="btn-medium p-1  texto" (click)="delete(Educacion.id)">
+                    <i class="fa-regular fa-trash-can p-1"></i>Borrar
+                </button>
+            </div>
+
         </div>
     </div>  
+
+    <div class="m-0 p-0 pt-3">
+        <button class="btn-medium px-3 py-2 texto" type="button" routerLink="/nuevaedu" *ngIf="isLogged">Agregar Educación</button>
+    </div>
 </div>

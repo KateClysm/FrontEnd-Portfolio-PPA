@@ -1,25 +1,25 @@
-<div class="row mx-0 px-lg-5">
-    <!--Título-->
-    <h2 class="fs-4 pb-2 border-bottom">Tecnologías</h2>
+<div class="row mx-0">
+
+    <h2 class="apartado pb-2 border-bottom">Tecnologías</h2>
     <div class="m-0 p-0">
-        <button class="btn-medium px-3 py-2" type="button" routerLink="/newskill"  *ngIf="isLogged">
+        <button class="btn-medium px-3 py-2 texto" type="button" routerLink="/newskill"  *ngIf="isLogged">
             Agregar Tecnología
         </button>
     </div>
     <!--Contenedor de las Card de Educación-->
     <div class="row px-0 mx-0 justify-content-center pt-3 gap-2 justify-content-sm-start">
         <!--Card iterada con For-->
-        <div class="col-auto text-sm-start card-skill py-3 px-4" *ngFor="let skill of skill">
-            <h6 class="text-center m-0">{{skill.nombre}}</h6>
+        <div class="col-auto text-sm-start card-skill py-2 py-md-3 px-3 px-md-4" *ngFor="let skill of skill">
+            <h6 class="text-center m-0 texto">{{skill.nombre}}</h6>
             <!--Botones Editar y Borrar-->
             <div class="d-flex align-content-end align-items-end" *ngIf="isLogged">
                 <div class="p-1">
-                    <button class="btn-medium px-2 py-1 sm-text" routerLink="/editskill/{{skill.id}}">
+                    <button class="btn-medium px-2 py-1 texto" routerLink="/editskill/{{skill.id}}">
                         <i class="fa-regular fa-pen-to-square p-1"></i>Editar
                     </button>
                 </div>
                <div class="p-1">
-                    <button class="btn-medium px-2 py-1 sm-text" (click)="delete(skill.id)">
+                    <button class="btn-medium px-2 py-1 texto" (click)="delete(skill.id)">
                         <i class="fa-regular fa-trash-can p-1"></i>Borrar
                     </button>
                </div>

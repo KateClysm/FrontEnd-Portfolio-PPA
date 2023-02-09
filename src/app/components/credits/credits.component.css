@@ -1,9 +1,16 @@
-/* .credits-section{
+.credits-section{
     height: 81vh;
-} */
-.credit-link{
-    color: var(--dark);
 }
+
 .fondo-credits{
     background-color: var(--dust);
+}
+
+p, li, a{
+    margin: 0;
+    padding: 0;
+}
+
+.credit-link{
+    color: var(--dark);
 }
