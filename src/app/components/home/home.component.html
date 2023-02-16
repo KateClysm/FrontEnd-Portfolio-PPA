@@ -4,8 +4,8 @@
 
         <div class="container text-center">
             
-            <h1 class="pb-1 text-shadow text-white display-1 text-uppercase" id="nombre">Maria Monchot</h1>
-            <h2 class="text-white apartado text-shadow pb-1 pb-md-2">Desarrolladora Web Full Stack Junior</h2>
+            <h1 class="pb-1 text-shadow text-white display-1 text-uppercase" id="nombre">{{persona.nombre}} {{persona.apellido}}</h1>
+            <h2 class="text-white apartado text-shadow pb-1 pb-md-2" id="titulo" >{{persona.titulo}}</h2>
 
             <div *ngIf="isLogged">
                 <button class="btn-medium px-2 py-1 px-lg-3 py-lg-2 texto" routerLink="/editAcercaDe/1" >
@@ -23,6 +23,5 @@
             <i class="fs-6 fa-solid fa-icons px-1 py-0"></i>
         </a>
     </div>
-    
    
 </div>

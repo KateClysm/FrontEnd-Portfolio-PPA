@@ -11,7 +11,8 @@ import { NuevoUsuario } from '../model/nuevo-usuario';
 })
 export class AuthService {
 
-  authURL = 'https://backendmariamonchot.onrender.com/auth/';
+  authURL = 'http://localhost:8080/auth/';
+  // authURL = 'https://backendmariamonchot.onrender.com/auth/';
 
   constructor(private httpClient: HttpClient) { }
 
@@ -23,3 +24,4 @@ export class AuthService {
    return this.httpClient.post<JwtDto>(this.authURL + 'login', loginUsuario)
  }
 }
+ 

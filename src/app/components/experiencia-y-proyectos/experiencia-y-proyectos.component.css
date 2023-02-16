@@ -1,6 +1,6 @@
 /*Línea Decorativa*/
 .vr{
-    background:linear-gradient(#fff, #167e8c);
+    background:linear-gradient(#167e8c, #fff);
     opacity: 1;
     width: 0.2rem;
     border-radius: 1rem;}

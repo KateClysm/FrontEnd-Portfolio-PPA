@@ -52,9 +52,7 @@ body{background: linear-gradient(var(--dark), var(--dark), var(--storm));
     justify-content: center;}
 
 /*Responsive font size*/
-.titulo{font-size: calc(1.1em + 1vw);}
-.subtitulo{font-size: calc(1em + 0.3vw);}
-
-.apartado{font-size: calc(0.9em + 0.7vw);}
-.gtexto{font-size: calc(0.5em + 0.7vw);}
-.texto{font-size: calc(0.3em + 0.7vw);}
+.titulo{font-size: calc(1.2em + 0.1vw);}
+.apartado{font-size: calc(1em + 0.8vw);}
+.gtexto{font-size: calc(0.9em + 0.1vw);}
+.texto{font-size: calc(0.8em + 0.1vw);}
