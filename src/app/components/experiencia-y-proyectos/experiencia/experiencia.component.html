@@ -1,37 +1,33 @@
-<div class="row mx-0 px-lg-5 pb-5">
-    <!--Título-->
-    <h2 class="apartado px-1 pb-3 border-bottom text-shadow">Quiénes confían en mi trabajo</h2>
-    <div class="m-0 p-0">
-        <button class="btn-medium px-3 py-2" type="button" routerLink="/nuevaexp" *ngIf="isLogged">
-            Agregar Experiencia
-        </button>
-    </div>
+<div class="row mx-0 pb-5">
 
-    <!--Contenedor de las card de Experiencia-->
-    <div class="row px-0 mx-0 justify-content-center pt-3 gap-2 justify-content-sm-start">
-        <!--Columnas de Cards de Trabajo con For-->
-        <div class="col-12 col-md-4 text-center text-sm-start px-3 card-trabajo py-2 py-lg-3" *ngFor="let Experiencia of expe">
-            <!--Logo de las Empresas-->
-            <div class="logo-trabajo py-3">
-                <img class="logo-trabajo"height="40px">
-            </div>
-            <h5 class="pt-2">{{Experiencia.nombreE}}</h5>
-            <p class="card-text sm-text">{{Experiencia.descripcionE}}</p>
+    <h2 class="pb-2 border-bottom apartado">Experiencia</h2>
+
+    <!--Contenedor de las Card de Educación-->
+    <div class="row px-0 mx-0 justify-content-center pt-3  justify-content-sm-start gap-2 abs-center">
+
+        <!--Card iterada con For-->
+        <div class="col-12 col-sm-5 col-md-auto text-center card-trabajo p-3 d-grid align-content-center py-4" *ngFor="let Experiencia of expe">
+            
+            <h5 class="gtexto m-0">{{Experiencia.nombreE}}</h5>
+            
+            <p class="card-text texto text-center p-0 m-0">{{Experiencia.descripcionE}}</p>
+            <!-- <div class="card-text texto text-center p-0 m-0">{{Experiencia.fechaE}}</div> -->
+            <!-- <p class="card-text texto text-center pt-3 pb-0 align-self-end">{{Experiencia.imgE}}</p> -->
+            
             <!--Botones Editar y Borrar-->
-            <div class="d-flex align-content-end align-items-end" *ngIf="isLogged">
-                <div class="p-1">
-                    <button class="btn-medium px-2 py-1 sm-text" type="button" routerLink="/editexp/{{Experiencia.id}}" >
-                        <i class="fa-regular fa-pen-to-square p-1"></i>Editar
-                    </button>
-                    
-                </div>
-               <div class="p-1">
-                    <button class="btn-medium px-2 py-1 sm-text" (click)="delete(Experiencia.id)">
-                        <i class="fa-regular fa-trash-can p-1"></i>Borrar
-                    </button>
-               </div>
+            <div class="abs-center gap-1 pt-3" *ngIf="isLogged">
+                <button class="btn-medium  p-1 texto " routerLink="/editexp/{{Experiencia.id}}" >
+                    <i class="fa-regular fa-pen-to-square p-1"></i>Editar
+                </button>
+                <button class="btn-medium p-1  texto" (click)="delete(Experiencia.id)">
+                    <i class="fa-regular fa-trash-can p-1"></i>Borrar
+                </button>
             </div>
-           
+
         </div>
     </div>  
+
+    <div class="m-0 p-0 pt-3">
+        <button class="btn-medium px-3 py-2 texto" type="button" routerLink="/nuevaexp" *ngIf="isLogged">Agregar Experiencia</button>
+    </div>
 </div>

@@ -1,0 +1,31 @@
+<div class="container-fluid abs-center editSection">
+    <form (ngSubmit)="onCreate()" novalidate #f="ngForm" class="text-white col-5">
+        <div class="form-group pb-2">
+            <label for="nombreP">Nombre del proyecto</label>
+            <input type="text" class="form-control" id="nombreP" name="nombreP" [(ngModel)]="nombreP" required>
+        </div>
+        <div class="form-group pb-3">
+            <label for="descripcionP">Descripcion del proyecto</label>
+            <input type="text" class="form-control" id="descripcionP" name="descripcionP" [(ngModel)]="descripcionP" required>
+        </div>
+        <!-- <div class="form-group pb-2">
+            <label for="fechaP">Fecha del proyecto</label>
+            <input type="text" class="form-control" id="fechaP" name="fechaP" [(ngModel)]="fechaP" required>
+        </div> -->
+        <!-- <div class="form-group pb-2">
+            <label for="linkP">Link del proyecto</label>
+            <input type="text" class="form-control" id="linkP" name="linkP" [(ngModel)]="linkP">
+        </div>
+        <div class="form-group pb-2">
+            <label for="gitP">Repositorio del proyecto</label>
+            <input type="text" class="form-control" id="gitP" name="gitP" [(ngModel)]="gitP">
+        </div>
+        <div class="form-group pb-2">
+            <label for="imgP">Imagen del proyecto</label>
+            <input type="text" class="form-control" id="imgP" name="imgP" [(ngModel)]="imgP">
+        </div> -->
+        <button class="btn-medium py-2 px-3">
+            Agregar Proyecto
+        </button>
+    </form>
+</div>

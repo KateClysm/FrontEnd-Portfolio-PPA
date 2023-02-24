@@ -1,37 +1,9 @@
-/*Línea Decorativa*/
+/*Línea decoradora*/
 .vr{
-    background:linear-gradient(#167e8c, #fff);
+    /* height: 100vh; */
+    background:linear-gradient(#fff, #b0092d);
     opacity: 1;
     width: 0.2rem;
     border-radius: 1rem;}
 
-/*Card Proyecto*/
-.card-proyecto{
-    background-color:#a99b94a7;
-    border-radius: 1rem;}
-/*Imagen Proyecto*/
-.card-img-top{
-    border: none;
-    border-radius: 0.8rem;}
-
-/*Botón Ver Proyecto Ver Código*/
-.btn-dark{
-    background-color: #3e3037;
-    color: #fff;
-    text-shadow: 0px 2px 2px var(--dark);
-    border: none;
-    border-radius: 0rem 0.8rem;
-    cursor: pointer;}
-/*Hover de los botones*/
-.btn-dark:hover{
-    background-color: var(--medium);
-    transition: ease-in 0.3s;}
-
-/*Hover de las tarjetas Trabajo y Proyecto*/
-.card:hover{
-    background-color:#764a3169;
-    transition: 0.4s;}
-
-/*Radio de los Logos empresas*/
-.logo-empresa{
-    border-radius: 2rem;}
+    

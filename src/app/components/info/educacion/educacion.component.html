@@ -1,19 +1,21 @@
-<div class="row mx-0 px-lg-2 pb-5">
+<div class="row mx-0 pb-5">
 
     <h2 class="pb-2 border-bottom apartado">Educación</h2>
 
     <!--Contenedor de las Card de Educación-->
-    <div class="row px-0 mx-0 justify-content-center pt-3  justify-content-sm-start gap-2">
+    <div class="row px-0 mx-0 justify-content-center pt-3  justify-content-sm-start gap-2 abs-center">
 
         <!--Card iterada con For-->
-        <div class="col-12 col-sm-5 col-md-auto text-center card-educacion p-3" *ngFor="let Educacion of educacion">
+        <div class="col-12 col-sm-5 col-md-auto text-center card-trabajo p-3 d-grid align-content-center py-4" *ngFor="let Educacion of educacion">
             
             <h5 class="gtexto m-0">{{Educacion.nombreE}}</h5>
             
-            <p class="card-text texto text-center pt-3 pb-0 align-self-end">{{Educacion.descripcionE}}</p>
+            <p class="card-text texto text-center p-0 m-0">{{Educacion.descripcionE}}</p>
+            <div class="card-text texto text-center p-0 m-0">{{Educacion.fechaE}}</div>
+            <!-- <p class="card-text texto text-center pt-3 pb-0 align-self-end">{{Experiencia.imgE}}</p> -->
             
             <!--Botones Editar y Borrar-->
-            <div class="abs-center" *ngIf="isLogged">
+            <div class="abs-center gap-1 pt-3" *ngIf="isLogged">
                 <button class="btn-medium  p-1 texto" routerLink="/editedu/{{Educacion.id}}" >
                     <i class="fa-regular fa-pen-to-square p-1"></i>Editar
                 </button>
@@ -26,6 +28,6 @@
     </div>  
 
     <div class="m-0 p-0 pt-3">
-        <button class="btn-medium px-3 py-2 texto" type="button" routerLink="/nuevaedu" *ngIf="isLogged">Agregar Educación</button>
+        <button class="btn-medium px-3 py-2 texto" type="button" routerLink="/nuevaedu" *ngIf="isLogged">Agregar Educacion</button>
     </div>
 </div>

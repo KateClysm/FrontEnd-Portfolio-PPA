@@ -1,15 +1,7 @@
 /*Línea decoradora*/
 .vr{
     /* height: 100vh; */
-    background:linear-gradient(#167e8c, #fff);
+    background:linear-gradient(#fff, #b0092d);
     opacity: 1;
     width: 0.2rem;
     border-radius: 1rem;}
-
-/*Fondo de las Card de Educación*/
-/*ïconos de Tecnologías*/
-.tecnologias{
-    text-shadow: 0px 5px 2px  var(--dark);}
-/*Hover íconos Tecnologías y Texto*/
-.tecnologias:hover{
-    color: #167e8c;}

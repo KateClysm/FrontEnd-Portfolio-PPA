@@ -1,6 +1,6 @@
 /*Hover de los íconos Github y StackOverflow*/
 .nav-link i:hover, .credits:hover, .nav-item:hover{
-    color: var(--light);
+    color: var(--magenta);
     transition: ease-in 0.3s; }
 
 /*Height*/

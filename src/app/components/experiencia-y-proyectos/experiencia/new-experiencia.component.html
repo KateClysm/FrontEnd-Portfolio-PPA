@@ -1,13 +1,26 @@
 <div class="container-fluid abs-center editSection">
     <form (ngSubmit)="onCreate()" novalidate #f="ngForm" class="text-white col-5">
-        <div class="form-group pb-2">
-            <label for="nombreE">Nombre de la empresa</label>
-            <input type="text" class="form-control" id="nombreE" name="nombreE" [(ngModel)]="nombreE" required>
+
+        <div class="form-floating pb-2">
+            <input type="text" class="form-control" id="nombreE" name="nombreE" placeholder="Nombre de la Experiencia" [(ngModel)]="nombreE" required>
+            <label for="nombreE"  class="text-muted">Nombre de la Experiencia</label>
         </div>
-        <div class="form-group pb-3">
-            <label for="descripcionE">Descripcion de la tarea</label>
-            <input type="text" class="form-control" id="descripcionE" name="descripcionE" [(ngModel)]="descripcionE" required>
+
+        <div class="form-floating pb-2">
+            <input type="text" class="form-control" id="descripcionE" name="descripcionE" placeholder="Descripción de la Experiencia" [(ngModel)]="descripcionE" required>
+            <label for="descripcionE"  class="text-muted">Descripción de la Experiencia</label>
         </div>
+
+        <div class="form-floating pb-2">
+            <input type="text" class="form-control" id="fechaE" name="fechaE" placeholder="Periodo de la Experiencia" [(ngModel)]="fechaE" required>
+            <label for="fechaE"  class="text-muted">Periodo de la Experiencia</label>
+        </div>
+      
+        <div class="form-floating pb-2">
+            <input type="text" class="form-control" id="imgE" name="imgE" placeholder="Imagen de la Experiencia" [(ngModel)]="imgE" required>
+            <label for="imgE"  class="text-muted">Imagen Experiencia</label>
+        </div>
+
         <button class="btn-medium py-2 px-3">
             Agregar experiencia
         </button>

@@ -24,6 +24,8 @@ import { SkillsComponent } from "./components/info/skills/skills.component";
 import { ExperienciaYProyectosComponent } from "./components/experiencia-y-proyectos/experiencia-y-proyectos.component";
 import { ExperienciaComponent } from "./components/experiencia-y-proyectos/experiencia/experiencia.component";
 import { EditAcercaDeComponent } from './components/home/edit-acerca-de.component';
+import { ProyectosComponent } from './components/experiencia-y-proyectos/proyectos/proyectos.component';
+import { NewProyectoComponent } from './components/experiencia-y-proyectos/proyectos/new-proyecto.component';
 
 
 
@@ -50,7 +52,8 @@ import { EditAcercaDeComponent } from './components/home/edit-acerca-de.componen
     EducacionComponent,
     SkillsComponent,
     EditAcercaDeComponent,
-
+    ProyectosComponent,
+    NewProyectoComponent
   ],
   //Modulos necesarios para que éste módulo funcione correctamente
     imports: [

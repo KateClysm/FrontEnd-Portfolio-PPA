@@ -7,8 +7,12 @@
 
 .credits{height: 5vh;}
 
-.credits:hover, .nav-item:hover{
-    color: var(--light);
+.credits:hover, .credits a:hover, .creidts i:hover{
+    color: var(--magenta);
     transition: ease-in 0.3s; }
+
+
+.credits, .credits a, .creidts i{
+    color: #fff;}
 
 a{text-decoration: none;}

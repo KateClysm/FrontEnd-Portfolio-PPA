@@ -1,26 +1,21 @@
 /*Fondo al abrir la nav en dispositivos pequeños*/
 .offcanvas.showing, .offcanvas.show:not(.hiding) {
-    background-color: var(--storm); }
+    background-color: var(--oscurotop); }
 
 /*Fondo de la barra de navegación extendida y Altura*/
 .navbar{height: 10vh;
-    /* background-color: var(--storm); */
-    background-color: #1d1719c4;
+    background-color: var(--oscurotop);
 }
 
-.offcanvas{
-    width: auto;
-}
-.btn-close{
-    color:#fff;
-}
+.offcanvas{width: auto;}
+.btn-close{color:#fff;}
 
 /*Items*/
 .nav-item .login, .nav-item a, .brand {
     color: #fff;}
 /*Items Hover*/
 .nav-item a:hover, .brand:hover{
-    color: var(--light);
+    color: var(--celesteclaro);
     transition: ease-in 0.3s; }
 
 /*Logo Plan Programar*/

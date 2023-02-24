@@ -6,41 +6,44 @@
 
 /*Paleta de colores*/
 :root{
-    --dark: #1d1719;
-    --medium: #896454;
-    --light:#c3a08f;
-    --dust: #a99b9470;
-    --deepblue: #167e8c5f;
-    --storm: #3e3037;}
+    --gris: #babecb67;
+    --magentaopaco: #98112efc;
+    --magenta: #b0092dc8;
+    --celesteclaro:#8dadb0;
+    --azulopaco: #003e46;
+    --azultransparente: #167e8c5f;
+    --oscurotop: #0f1b27;
+    --oscuro: #000b18;}
 
 /*imágenes en sobre mí y experiencia*/
 .img-section{width: 280px;}
 
 /*botón usado en inicio, contacto y login*/
 .btn-medium{
-    background-color: var(--medium);
+    background-color: var(--magenta);
     color: #fff;
-    text-shadow: 0px 2px 2px var(--dark);
+    text-shadow: 0px 2px 2px var(--oscuro);
     border: none;
     border-radius: 0.5em;
     cursor: pointer;}
 .btn-medium:hover{
-    background-color: var(--light);
+    background-color: var(--azultransparente);
     transition: ease-in 0.3s;} 
 
 
 /*Text Shadow*/
-.text-shadow{text-shadow: 0px 2px 2px var(--dark);}
+.text-shadow{text-shadow: 0px 2px 2px var(--oscuro);}
 
 /*Secciones de edición*/
 .editSection{
-    height: 90vh;
-    background: linear-gradient(var(--dark), var(--dark), var(--storm));}
+    height: 90vh;}
 
 /*Fondo general*/
-body{background: linear-gradient(var(--dark), var(--dark), var(--storm));
+body{background: linear-gradient(var(--oscuro), var(--celesteclaro));
     height: 100%;
-    background-attachment: fixed;}
+    background-attachment:fixed;
+    background-size: cover;
+}
 
 /*Formularios*/
 .form-control{outline: none;}
