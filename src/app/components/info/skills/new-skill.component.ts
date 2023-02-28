@@ -9,7 +9,9 @@ import { SkillService } from 'src/app/services/skill.service';
   styleUrls: ['./new-skill.component.css']
 })
 export class NewSkillComponent implements OnInit {
-  nombre: string;
+  nombreS: string;
+  descripcionS: string;
+  imgS: string;
 
   constructor(private skillS: SkillService, private router: Router) { }
 
@@ -17,14 +19,14 @@ export class NewSkillComponent implements OnInit {
   }
 
   onCreate(): void{
-    const skill = new Skill(this.nombre);
+    const skill = new Skill(this.nombreS, this.descripcionS, this.imgS);
     this.skillS.save(skill).subscribe(
       data => {
         alert("Skill creada correctamente");
-        this.router.navigate(['']);
+        this.router.navigate(['Sobre-Mi']);
       }, err =>{
         alert("Fallo al añadir la skill");
-        this.router.navigate(['']);
+        this.router.navigate(['Sobre-Mi']);
       }
     )
   }

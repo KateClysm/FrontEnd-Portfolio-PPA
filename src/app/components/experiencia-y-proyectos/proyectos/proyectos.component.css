@@ -1,12 +1,12 @@
 /*Card Trabajo*/
-.card-proyecto{
+.card-trabajo{
     background-color:var(--gris);
     border-radius: 0.3rem;
     /* min-height: 20vh; */
 }
 
 /*Hover de las Card Educación*/
-.card-proyecto:hover{
+.card-trabajo:hover{
     background-color:var(--magenta);
 }
 .accordion-item, .accordion-button{
@@ -16,4 +16,3 @@
     border: none;
 
 }
-

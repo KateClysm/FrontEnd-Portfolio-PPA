@@ -1,11 +1,22 @@
 <div class="container-fluid abs-center editSection" *ngIf="skill">
     <form (ngSubmit)="onUpdate()" novalidate #f="ngForm" class="text-white col-5">
-        <div class="form-group pb-3">
-            <label for="nombre" >Nombre de la Skill</label>
-            <input type="text" class="form-control"  id="nombre" name="nombre" [(ngModel)]="skill.nombre" required>
+        <div class="form-floating pb-2">
+            <input type="text" class="form-control" id="nombreS" name="nombreS" placeholder="Nombre de la Tecnología" [(ngModel)]="skill.nombreS" required>
+            <label for="nombreS"  class="text-muted">Nombre de la Tecnología</label>
         </div>
-        <button class="btn-medium px-3 py-2">
-            Actualizar Skill
+
+        <div class="form-floating pb-2">
+            <input type="text" class="form-control" id="descripcionS" name="descripcionS" placeholder="Descripciónde la Tecnología" [(ngModel)]="skill.descripcionS" required>
+            <label for="descripcionS"  class="text-muted">Descripción de la Tecnología</label>
+        </div>
+
+        <div class="form-floating pb-2">
+            <input type="text" class="form-control" id="imgS" name="imgS" placeholder="Imagen de la Tecnología" [(ngModel)]="skill.imgS" required>
+            <label for="imgS"  class="text-muted">Imagen de la Tecnología</label>
+        </div>
+
+        <button class="btn-medium py-2 px-3">
+            Agregar skill
         </button>
     </form>
 </div>

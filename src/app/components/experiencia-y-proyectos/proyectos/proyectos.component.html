@@ -1,53 +1,45 @@
-<div class="row mx-0 px-lg-2 pb-5">
+<div class="row mx-0 pb-5">
 
     <h2 class="pb-2 border-bottom apartado">Proyectos</h2>
 
-    <div class="row px-0 mx-0 justify-content-center pt-3  justify-content-sm-start gap-2 gap-lg-3">
+    <!--Contenedor de las Card de Educación-->
+    <div class="row px-0 mx-0 justify-content-center pt-3  justify-content-sm-start gap-2 abs-center">
 
-        <div class="m-0 p-0">
-            <button class="btn-medium px-3 py-2" type="button" routerLink="/nuevoproyecto" *ngIf="isLogged">
-                Agregar Experiencia
-            </button>
-        </div>
-
-        <div class="col-auto  col-sm-5 col-md-4 col-lg-3 text-center  card-proyecto p-1 texto" *ngFor="let Proyectos of proye">
-            <!-- <div class="card-image">
-                <img src="{{Proyectos.imgP}}" class="card-img-top" width="100%" height="50%" >
-            </div> -->
-
-            <div class="card-body p-0 text-white">
-                <h5 class="pt-2 subtitulo">{{Proyectos.nombreP}}</h5>
-                <p class="card-text mb-0 pb-2">{{Proyectos.descripcionP}}</p>
-                <!-- <p class="card-text pb-2">{{Proyectos.fechaP}}</p> -->
+        <!--Card iterada con For-->
+        <div class="col-12 col-sm-5 col-md-auto text-center card-trabajo p-3 d-grid align-content-center py-4" *ngFor="let Proyectos of proye">
+            
+            <h5 class="gtexto m-0">{{Proyectos.nombreP}}</h5>
+            
+            <p class="card-text texto text-center p-0 m-0">{{Proyectos.descripcionP}}</p>
+            <p class="card-text texto text-center p-0 m-0">{{Proyectos.fechaP}}</p>
+             <!--Botones Git y Link del Proyecto-->
+             <div class="abs-center gap-1 pt-3">
+                <button class="btn-medium p-1 px-2 texto" >
+                    <i class="fa-brands fa-github p-1"></i>Git
+                </button>
+                <button class="btn-medium p-1 px-2  texto">
+                    <i class="fa-brands fa-github p-1"></i>Link
+                </button>
             </div>
 
-
-            <!-- <div class="abs-center gap-1">
-                <button class="btn-medium  p-1" >
-                    <a href="{{Proyectos.linkP}}" id="linkP" target="_blank"></a>
-                    Ver Proyecto
-                </button>
-                <button class="btn-medium p-1 " >
-                    <a href="{{Proyectos.gitP}}" id="gitP" target="_blank">
-                        <i class="fa-brands fa-github p-1"></i>Ver Código
-                    </a>
-                </button>
-            </div> -->
+            <!-- <p class="card-text texto text-center p-0 m-0">{{Proyectos.linkP}}</p>
+            <p class="card-text texto text-center p-0 m-0">{{Proyectos.gitP}}</p>
+            <p class="card-text texto text-center p-0 m-0">{{Proyectos.imgP}}</p> -->
             
             <!--Botones Editar y Borrar-->
-            <!-- <div class="d-flex align-content-end align-items-end" *ngIf="isLogged">
-                <div class="p-1">
-                    <button class="btn-medium px-2 py-1 sm-text" type="button" routerLink="/editproyecto/{{Proyectos.id}}" >
-                        <i class="fa-regular fa-pen-to-square p-1"></i>Editar
-                    </button>
-                    
-                </div>
-               <div class="p-1">
-                    <button class="btn-medium px-2 py-1 sm-text" (click)="delete(Proyectos.id)">
-                        <i class="fa-regular fa-trash-can p-1"></i>Borrar
-                    </button>
-               </div>
-            </div> -->
-        </div> 
-     </div> 
+            <div class="abs-center gap-1 pt-3" *ngIf="isLogged">
+                <button class="btn-medium  p-1 texto " routerLink="/editproyecto/{{Proyectos.id}}" >
+                    <i class="fa-regular fa-pen-to-square p-1"></i>Editar
+                </button>
+                <button class="btn-medium p-1  texto" (click)="delete(Proyectos.id)">
+                    <i class="fa-regular fa-trash-can p-1"></i>Borrar
+                </button>
+            </div>
+
+        </div>
+    </div>  
+
+    <div class="m-0 p-0 pt-3">
+        <button class="btn-medium px-3 py-2 texto" type="button" routerLink="/nuevoproyecto" *ngIf="isLogged">Agregar Proyecto</button>
+    </div>
 </div>

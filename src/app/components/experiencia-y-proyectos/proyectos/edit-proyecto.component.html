@@ -1,0 +1,38 @@
+<div class="container-fluid abs-center editSection" *ngIf="proyecto"> 
+    <form (ngSubmit)="onUpdate()" novalidate #f="ngForm" class="text-white col-5">
+
+        <div class="form-floating pb-2">
+            <input type="text" class="form-control" id="nombreP" name="nombreP" placeholder="Nombre del Proyecto" [(ngModel)]="proyecto.nombreP" required>
+            <label for="nombreP"  class="text-muted">Nombre del Proyecto</label>
+        </div>
+
+        <div class="form-floating pb-2">
+            <input type="text" class="form-control" id="descripcionP" name="descripcionP" placeholder="Descripción del Proyecto" [(ngModel)]="proyecto.descripcionP" required>
+            <label for="descripcionP"  class="text-muted">Descripción del Proyecto</label>
+        </div>
+
+        <div class="form-floating pb-2">
+            <input type="text" class="form-control" id="fechaP" name="fechaP" placeholder="Fecha de creación del Proyecto" [(ngModel)]="proyecto.fechaP" required>
+            <label for="fechaP"  class="text-muted">Fecha de creación del Proyecto</label>
+        </div>
+      
+        <div class="form-floating pb-2">
+            <input type="text" class="form-control" id="linkP" name="linkP" placeholder="Link del Proyecto" [(ngModel)]="proyecto.linkP" required>
+            <label for="linkP"  class="text-muted">Link del Proyecto</label>
+        </div>
+
+        <div class="form-floating pb-2">
+            <input type="text" class="form-control" id="gitP" name="gitP" placeholder="Git del Proyecto" [(ngModel)]="proyecto.gitP" required>
+            <label for="gitP"  class="text-muted">Git del Proyecto</label>
+        </div>
+
+        <div class="form-floating pb-2">
+            <input type="text" class="form-control" id="imgP" name="imgP" placeholder="Imagen del Proyecto" [(ngModel)]="proyecto.imgP" required>
+            <label for="imgP"  class="text-muted">Imagen del Proyecto</label>
+        </div>
+
+        <button class="btn-medium py-2 px-3">
+            Agregar Proyecto
+        </button>
+    </form>
+</div>

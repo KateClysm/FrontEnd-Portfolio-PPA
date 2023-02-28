@@ -26,10 +26,10 @@ export class NewProyectoComponent implements OnInit {
     this.sProyectos.save(proyecto).subscribe(
       data => {
         alert("Proyecto añadido");
-        this.router.navigate(['']);
+        this.router.navigate(['Experiencia-Y-Proyectos']);
       }, err => {
         alert("Falló");
-        this.router.navigate(['']);
+        this.router.navigate(['Experiencia-Y-Proyectos']);
       }
     )
   }

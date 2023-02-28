@@ -1,8 +1,12 @@
 export class Skill {
     id: number;
-    nombre: string;
+    nombreS: string;
+    descripcionS: string;
+    imgS: string;
 
-    constructor(nombre:string){
-        this.nombre = nombre;
+    constructor(nombreS:string, descripcionS:string, imgS:string){
+        this.nombreS = nombreS;
+        this.descripcionS = descripcionS ;
+        this.imgS = imgS;
     }
 }

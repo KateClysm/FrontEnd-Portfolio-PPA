@@ -9,22 +9,23 @@
     <!--Contenedor de las Card de Educación-->
     <div class="row px-0 mx-0 justify-content-center pt-3 gap-2 justify-content-sm-start">
         <!--Card iterada con For-->
-        <div class="col-auto text-sm-start card-skill py-2 py-md-3 px-3 px-md-4" *ngFor="let skill of skill">
-            <h6 class="text-center m-0 texto">{{skill.nombre}}</h6>
+        <div class="col-auto text-sm-start card-skill py-2 py-md-3 px-3 px-md-4 skilltooltip" *ngFor="let skill of skill">
+           <div class="px-1">
+                <p class="text-center m-0 texto ">{{skill.nombreS}}
+                    <span class="text-center m-0 texto skilltooltip-box">{{skill.descripcionS}}</span>
+                </p>
+           </div>
+
+
             <!--Botones Editar y Borrar-->
-            <div class="d-flex align-content-end align-items-end" *ngIf="isLogged">
-                <div class="p-1">
-                    <button class="btn-medium px-2 py-1 texto" routerLink="/editskill/{{skill.id}}">
-                        <i class="fa-regular fa-pen-to-square p-1"></i>Editar
-                    </button>
-                </div>
-               <div class="p-1">
-                    <button class="btn-medium px-2 py-1 texto" (click)="delete(skill.id)">
-                        <i class="fa-regular fa-trash-can p-1"></i>Borrar
-                    </button>
-               </div>
+            <div class="abs-center gap-1 pt-3" *ngIf="isLogged">
+                <button class="btn-medium  p-1 texto" routerLink="/editskill/{{skill.id}}" >
+                    <i class="fa-regular fa-pen-to-square p-1"></i>Editar
+                </button>
+                <button class="btn-medium p-1  texto" (click)="delete(skill.id)">
+                    <i class="fa-regular fa-trash-can p-1"></i>Borrar
+                </button>
             </div>
-        </div>
 
         
     </div>  

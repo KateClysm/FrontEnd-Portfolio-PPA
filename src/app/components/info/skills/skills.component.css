@@ -14,6 +14,33 @@
     background-color: transparent;
     outline: none;
     border: none;
-
 }
 
+.skilltooltip{
+    position: relative;
+}
+.skilltooltip:hover .skilltooltip-box{
+    display: block;
+}
+.skilltooltip-box{
+    display: none;
+    background-color: var(--azulopaco);
+    line-height: 1.5rem;
+    z-index: 300;
+    position: absolute;
+    left: 0;
+    right: 0;
+    bottom: calc(4em + 1vw);
+    border-radius: 0.5rem;
+    padding: 0rem 0.5rem;
+}
+.skilltooltip-box::after{
+    content: "";
+    display: block;
+    border-top: calc(0.5em + 0.3vw) solid  var(--azulopaco);
+    border-left: calc(0.5em + 0.3vw) solid transparent;
+    border-right: calc(0.5em + 0.3vw) solid transparent;
+    position: absolute;
+    bottom: -calc(0.5em + 0.3vw);
+    left: calc(50% - calc(0.5em + 0.3vw));
+}
