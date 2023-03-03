@@ -2,9 +2,11 @@
 .card-trabajo{
     background-color:var(--gris);
     border-radius: 0.3rem;
-    /* min-height: 20vh; */
 }
 
+/* .text-wr{
+    overflow-wrap: break-word;
+} */
 /*Hover de las Card Educación*/
 .card-trabajo:hover{
     background-color:var(--magenta);

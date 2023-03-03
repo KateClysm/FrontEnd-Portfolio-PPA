@@ -57,5 +57,5 @@ body{background: linear-gradient(var(--oscuro), var(--celesteclaro));
 /*Responsive font size*/
 .titulo{font-size: calc(1.2em + 0.1vw);}
 .apartado{font-size: calc(1em + 0.8vw);}
-.gtexto{font-size: calc(0.9em + 0.1vw);}
+.gtexto{font-size: calc(0.9em + 0.2vw);}
 .texto{font-size: calc(0.8em + 0.1vw);}

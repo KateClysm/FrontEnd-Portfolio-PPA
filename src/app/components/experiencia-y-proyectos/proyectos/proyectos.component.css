@@ -2,7 +2,9 @@
 .card-trabajo{
     background-color:var(--gris);
     border-radius: 0.3rem;
-    /* min-height: 20vh; */
+    min-height: 17vh;
+    overflow-wrap: break-word;
+    
 }
 
 /*Hover de las Card Educación*/
@@ -16,3 +18,4 @@
     border: none;
 
 }
+

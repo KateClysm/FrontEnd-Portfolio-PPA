@@ -6,14 +6,15 @@
     <div class="row px-0 mx-0 justify-content-center pt-3  justify-content-sm-start gap-2 abs-center">
 
         <!--Card iterada con For-->
-        <div class="col-12 col-sm-5 col-md-auto text-center card-trabajo p-3 d-grid align-content-center py-4" *ngFor="let Proyectos of proye">
+        <div class="col-12 col-sm-5 text-center card-trabajo p-2 pt-3 align-content-center" *ngFor="let Proyectos of proye">
             
             <h5 class="gtexto m-0">{{Proyectos.nombreP}}</h5>
             
-            <p class="card-text texto text-center p-0 m-0">{{Proyectos.descripcionP}}</p>
-            <p class="card-text texto text-center p-0 m-0">{{Proyectos.fechaP}}</p>
+            <p class="card-text texto text-center p-0 m-0 pt-1">{{Proyectos.descripcionP}}</p>
+            <p class="card-text texto text-center p-0 m-0 pt-1">{{Proyectos.fechaP}}</p>
+
              <!--Botones Git y Link del Proyecto-->
-             <div class="abs-center gap-1 pt-3">
+             <div class="abs-center gap-1 pt-2">
                 <button class="btn-medium p-1 px-2 texto" >
                     <i class="fa-brands fa-github p-1"></i>Git
                 </button>
