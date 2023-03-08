@@ -1,0 +1,17 @@
+.form-control{
+    box-shadow: 0px 1px 4px var(--dark);
+    border: 2px solid var(--light);}
+/*Height*/
+.login-section{
+    height: 81vh;
+}
+
+.form-control{
+    border: 2px solid var(--celesteclaro);}
+
+input{
+    padding: 0%;
+}
+.form-floating{
+    padding-bottom: 0.5em;
+}

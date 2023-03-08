@@ -1,22 +1,38 @@
-<div  class="container-fluid editSection abs-center" > <!-- *ngIf="persona" -->
-    <!-- <form (ngSubmit)="onUpdate()" novalidate #f="ngForm" class="text-white col-5">
-        <div class="form-group pb-2">
-            <label for="nombre">Nombre de la persona</label>
-            <input type="text" class="form-control" id="nombreE" name="nombreE" [(ngModel)]="persona.nombre" required>
+<div class="container-fluid abs-center editSection"> 
+    <form novalidate #f="ngForm" class="text-white col-5">
+
+        <div class="form-floating pb-2">
+            <input type="text" class="form-control" id="nombreP" name="nombreP" placeholder="Nombre del Proyecto" required>
+            <label for="nombreP"  class="text-muted">Nombre del Proyecto</label>
         </div>
 
-        <div class="form-group pb-2">
-            <label for="nombre">Apellido de la persona</label>
-            <input type="text" class="form-control" id="apellido" name="apellido" [(ngModel)]="persona.apellido" required>
+        <div class="form-floating pb-2">
+            <input type="text" class="form-control" id="descripcionP" name="descripcionP" placeholder="Descripción del Proyecto" required>
+            <label for="descripcionP"  class="text-muted">Descripción del Proyecto</label>
         </div>
 
-        <div class="form-group pb-2">
-            <label for="descripcion">Descripcion de la Persona</label>
-            <input type="text" class="form-control" id="descripcion" name="descripcion" [(ngModel)]="persona.descripcion" required>
+        <div class="form-floating pb-2">
+            <input type="text" class="form-control" id="fechaP" name="fechaP" placeholder="Fecha de creación del Proyecto" required>
+            <label for="fechaP"  class="text-muted">Fecha de creación del Proyecto</label>
+        </div>
+      
+        <div class="form-floating pb-2">
+            <input type="text" class="form-control" id="linkP" name="linkP" placeholder="Link del Proyecto" required>
+            <label for="linkP"  class="text-muted">Link del Proyecto</label>
+        </div>
+
+        <div class="form-floating pb-2">
+            <input type="text" class="form-control" id="gitP" name="gitP" placeholder="Git del Proyecto" required>
+            <label for="gitP"  class="text-muted">Git del Proyecto</label>
+        </div>
+
+        <div class="form-floating pb-2">
+            <input type="text" class="form-control" id="imgP" name="imgP" placeholder="Imagen del Proyecto" required>
+            <label for="imgP"  class="text-muted">Imagen del Proyecto</label>
         </div>
 
         <button class="btn-medium py-2 px-3">
-            Editar Perfil
+            Agregar Proyecto
         </button>
-    </form> -->
+    </form>
 </div>

@@ -7,11 +7,12 @@
             <h1 class="pb-1 text-shadow text-white display-1 text-uppercase" id="nombre">{{persona.nombre}} {{persona.apellido}}</h1>
             <h2 class="text-white apartado text-shadow pb-1 pb-md-2" id="titulo" >{{persona.titulo}}</h2>
 
-            <div *ngIf="isLogged">
+            <div *ngIf="isLogged" class="pb-2">
                 <button class="btn-medium px-2 py-1 px-lg-3 py-lg-2 texto" routerLink="/editAcercaDe/1" >
                     <i class="fa-regular fa-pen-to-square"></i>Editar Perfil
                 </button>
             </div>
+           
             <button type="button" class="btn-medium px-2 py-1 px-lg-3 py-lg-2 texto">Descargar CV</button>
 
         </div>
