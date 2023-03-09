@@ -1,6 +1,7 @@
 import { HttpClient } from '@angular/common/http';
 import { Injectable } from '@angular/core';
 import { Observable } from 'rxjs/internal/Observable';
+import { environment } from 'src/environments/environment';
 import { Proyectos } from '../model/proyectos';
 
 @Injectable({
@@ -8,7 +9,8 @@ import { Proyectos } from '../model/proyectos';
 })
 export class SProyectosService{
 
-  URL = 'http://localhost:8080/proyectos/'
+  URL = environment.URL + 'proyectos/';
+  //URL = 'http://localhost:8080/proyectos/'
   // URL = 'https://backendmariamonchot.onrender.com/proyectos/';
 
   constructor(private httpClient: HttpClient) { }
