@@ -1,4 +1,4 @@
 export const environment = {
   production: true,
-  //URL: 'http://.............'
+  URL: 'https://bemariamonchot.onrender.com'
 };
