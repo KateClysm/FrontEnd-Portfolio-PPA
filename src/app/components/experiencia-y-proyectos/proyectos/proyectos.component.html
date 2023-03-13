@@ -16,16 +16,20 @@
              <!--Botones Git y Link del Proyecto-->
              <div class="abs-center gap-1 pt-2">
                 <button class="btn-medium p-1 px-2 texto" >
-                    <i class="fa-brands fa-github p-1"></i>Git
+                    <a class="text-white no-line" target="_blank" href="{{Proyectos.gitP}}">
+                        <i class="fa-brands fa-github p-1"></i>Git
+                    </a>
+                    
                 </button>
                 <button class="btn-medium p-1 px-2  texto">
-                    <i class="fa-brands fa-github p-1"></i>Link
+                    <a class="text-white no-line" target="_blank" href="{{Proyectos.linkP}}">
+                        <i class="fa-brands fa-github p-1 "></i>Link
+                    </a>
                 </button>
+               
             </div>
 
-            <!-- <p class="card-text texto text-center p-0 m-0">{{Proyectos.linkP}}</p>
-            <p class="card-text texto text-center p-0 m-0">{{Proyectos.gitP}}</p>
-            <p class="card-text texto text-center p-0 m-0">{{Proyectos.imgP}}</p> -->
+            <!-- <p class="card-text texto text-center p-0 m-0">{{Proyectos.imgP}}</p>  -->
             
             <!--Botones Editar y Borrar-->
             <div class="abs-center gap-1 pt-3" *ngIf="isLogged">

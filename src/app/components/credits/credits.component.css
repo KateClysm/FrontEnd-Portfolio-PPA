@@ -1,6 +1,6 @@
-.credits-section{
-    height: 81vh;
-}
+/* .credits-section{
+    min-height: 81vh;
+} */
 
 .fondo-credits{
     background-color: var(--dust);

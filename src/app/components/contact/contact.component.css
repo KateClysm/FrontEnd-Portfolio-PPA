@@ -1,8 +1,7 @@
 /*Deshabilitar resize del text area*/
 textarea{resize: none;}
 
-/*Espacio que abarca en pantalla el formulario de contacto*/
-.contact-section{height: 81vh;}
+
 
 .form-control{
     border: 2px solid var(--celesteclaro);}
@@ -19,9 +18,18 @@ input{
     transform: scale(1.2);
 }
 .img-contact{
-    height: 40vh;
+    height: calc(10em + 15vw);
 }
 .email {
     color:#fff;
     text-shadow: 3px 1px 2px var(--magentaopaco);
+    font-size: calc(1em + 1.5vw);
 }
+.pregunta{
+    font-size: calc(1em + 1.5vw);
+}
+
+.editSection{
+    height: 91vh;
+}
+.contact-section{height: 81vh;}
